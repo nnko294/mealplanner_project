@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #2a7ae2;
+    text-align: center;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #eaf2fd;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2a7ae2;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.tabs button.active {
+    background: #2a7ae2;
+    color: white;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a7ae2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #1a5bb8;
+}
+.hidden {
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logout-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout-btn:hover {
+    background: #b71c1c;
+}
+.ai-box {
+    background-color: #eaf2fd;
+    border: 1px solid #2a7ae2;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(42, 122, 226, 0.2);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #1a3b6b;
+}
+.ai-box::before {
+    content: "💡 AI Insight:";
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2a7ae2;
+}

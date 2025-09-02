@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal Planner Dashboard</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="welcome"></span>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <div class="info">
+            <h1>Meal Planner Dashboard</h1>
+            <p>Select your condition to get recommended meals.</p>
+            <select id="disease">
+                <option value="Diabetes">Diabetes</option>
+                <option value="Hypertension">Hypertension</option>
+                <option value="Gluten Intolerance">Gluten Intolerance</option>
+            </select>
+            <button onclick="getRecommendations()">Get Recommendations</button>
+
+            <h2>Database Meals</h2>
+            <ul id="results"></ul>
+
+            <h2>AI Suggestions</h2>
+            <div id="ai-results" class="ai-box"></div>
+            
+            <h2>Upgrade to Premium</h2>
+            <button id="paystack-btn">Pay with Paystack</button>
+        </div>
+    </div>
+
+    <script src="../static/dashboard.js"></script>
+</body>
+</html>
